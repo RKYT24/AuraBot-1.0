@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/BotStyles.css" />
+  <link rel="website icon" href="/media/website-logo.png" />
+  <title>Aurabot : Mental Care AI</title>
+</head>
+
+<body>
+  <header>
+    <div class="daily-quotes-container">
+      <img src="/media/website-logo.png" alt="AuraBot" />
+      <p class="DemoQuote">
+        One of the deep secrets of life is that all that is really worth doing is what we do for others.
+      </p>
+      <img class="quote-icon" src="/media/quote-svgrepo-com.svg" alt="quote-icon" width="100vh" />
+    </div>
+  </header>
+
+  <!-- ---------------- Main Area ---------------- -->
+  <div class="main-area">
+    <div class="chat-container">
+      <div class="ai-chatbox">
+        <img src="/media/AI 2.png" alt="Ai-img" id="ai-logo" width="40vh" />
+        <div class="ai-chat-area">
+          <p>Hi, <span class="username"></span> How's your day today?</p>
+        </div>
+      </div>
+
+      <!-- 👇 Chat messages will be added here dynamically -->
+      <div id="chat-box" class="chat-box"></div>
+    </div>
+
+    <!-- ---------------- Prompt Input ---------------- -->
+    <div class="prompt-container">
+      <input type="text" id="user-input" placeholder="Describe Your Feeling here..." />
+      <button type="button" class="speech-to-text-btn">
+        <img src="/media/mic-logo-icon-png-svg.png" alt="voice-text" />
+      </button>
+      <button id="send-button" type="button">Send</button>
+    </div>
+  </div>
+
+  <!-- ---------------- Footer ---------------- -->
+  <footer>
+    <div class="Miscellanious-section">
+      <p>created by - Rahul Kumar</p>
+    </div>
+  </footer>
+
+  <!-- ---------------- Scripts ---------------- -->
+  <script src="/scripts/daily-quote-gen.js"></script>
+  <script src="/scripts/main-chat-fn.js"></script>
+  <script src="./scripts/mic.js"></script>
+</body>
+
+</html>
