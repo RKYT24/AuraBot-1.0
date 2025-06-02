@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const userInput = document.getElementById("user-input");
   const sendButton = document.getElementById("send-button");
 
-  const API_KEY = AIzaSyAWOOOl2fjA1B3OV0wN8kJKRljhaZJrsMM; // Replace with your real Gemini API key
+  const API_KEY = process.env.GEMINI_API_KEY // Replace with your real Gemini API key
   const API_ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${API_KEY}`;
 
   // Function to add a message to the chat box
