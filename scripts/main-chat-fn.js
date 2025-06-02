@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const promptInput = document.querySelector("#user-input");
     const sendButton = document.querySelector("#send-button");
 
-    const apiKey = 'AIzaSyAWOOOl2fjA1B3OV0wN8kJKRljhaZJrsMM';  // ⛔ Never use this in public code
+    const apiKey = process.env.GEMINI_API_KEY;  // ⛔ Never use this in public code
     const apiChatUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
     async function sendMessage() {
