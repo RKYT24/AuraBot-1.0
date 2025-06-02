@@ -4,3 +4,7 @@
 /codeIgnore
 /Docs
 /.vscode
+
+# unusual files ----------------
+
+./scripts/min.js
