@@ -1,9 +1,9 @@
 .env
-/node_modules
+./node_modules
 .vercel
-/codeIgnore
-/Docs
-/.vscode
+./codeIgnore
+./Docs
+./.vscode
 
 # unusual files ----------------
 
