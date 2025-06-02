@@ -32,7 +32,7 @@ body{
     display: none;
 }
 .main-area{
-    overflow-y: scroll;
+    overflow-y:auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,7 +144,7 @@ body{
 
 .chat-container{
     width: 70vw;
-    height: auto;
+    height: calc(100vh - 30vh);
     max-height: 80vh;
     min-height: 70vh;
     display: flex;
